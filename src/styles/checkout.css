@@ -1,0 +1,43 @@
+.checkout-page{
+    text-align: center;
+    padding: 20px;
+}
+
+.payment-button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.payment-button:hover{
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px){
+    .checkout-page{
+        padding: 10px;
+    }
+    
+    .payment-button{
+        padding: 8px 15px;
+    }
+    
+    .payment-button:hover{
+        background-color: #0056b3;
+    }
+}
+
+.qr-code{
+    margin-top: 20px;
+}
+
+.qr-code{
+    width: 200px;
+    height: 200px;
+}

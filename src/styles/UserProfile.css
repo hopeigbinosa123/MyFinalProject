@@ -1,0 +1,40 @@
+/* The CSS code you provided is styling a user profile section on a website. Here's a breakdown of what
+each part of the code is doing: */
+
+.user-profile {
+    padding: 20px;
+  }
+  
+  .profile-section, .sell-section {
+    margin-bottom: 20px;
+  }
+  
+  .sell-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .sell-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* styles for mobile devices */
+@media (max-width: 480px) {
+  .user-profile {
+    padding: 10px;
+  }
+  
+  .profile-section, .sell-section {
+    margin-bottom: 10px;
+  }
+  
+  .sell-button {
+    width: 100%;
+  }
+}

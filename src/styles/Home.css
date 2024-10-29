@@ -1,0 +1,75 @@
+/* The provided CSS code is styling a webpage layout. Here's a breakdown of what each part of the code
+is doing: */
+
+.home-page{
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p{
+    font-size: 1.5rem;
+    color: aqua;
+}
+
+.featured-products{
+    text-align: center;
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    color: white;
+    text-shadow: 1px 1px 3px aqua;
+}
+
+.product-card h3{
+    margin-top: 10px;
+}
+/*Styles for tablet devices */
+
+@media (max-width: 768px) {
+    .product-grid{
+        flex-direction: column;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .home-page{
+        padding: 10px;
+    }
+    
+    header{
+        font-size: 1.8rem;
+    }
+    
+    header p{
+        font-size: 1.2rem;
+    }
+
+    .product-grid{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

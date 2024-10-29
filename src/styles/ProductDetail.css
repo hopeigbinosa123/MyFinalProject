@@ -1,0 +1,66 @@
+/* The CSS code you provided is styling a product detail section on a webpage. Here's a breakdown of
+what each part of the code is doing: */
+.product-detail{
+    padding: 20px;
+    text-align: center;
+}
+
+.product-detail img{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-detail h2{
+    font-size: 2em;
+}
+
+.product-detail p{
+    font-size: 1.2em;
+    color: aqua;
+}
+
+.product-detail span{
+    font-size: 1.6em;
+    color: blue;
+    margin: 20px 0;
+    display: block;
+    font-weight: bold;
+}
+
+.product-detail button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.9s;
+}
+
+.product-detail button:hover{
+    background-color: #0056b3;
+}   
+
+/*Styles for mobile devices */
+@media (max-width: 480px){
+    .product-detail{
+       padding: 10px;
+    }
+
+    .product-detail h2{
+        font-size: 1.6em;
+    }
+
+    .product-detail p{
+        font-size: 1.1em;
+    }
+
+    .product-detail span{
+        font-size: 1.4em;
+    }
+
+    .product-detail button{
+        width: 100%;
+    }
+}

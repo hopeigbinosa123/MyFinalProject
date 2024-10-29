@@ -1,0 +1,14 @@
+.success-page{
+    text-align: center;
+    padding: 20px;
+}
+
+.success-page h2{
+    color: aqua;
+    font-size: 2rem;
+}
+
+.success-page p{
+    color: aquamarine;
+    font-size: 1.2rem;
+}
