@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '0 * * * *'  # This runs the workflow every hour
   workflow_dispatch:
 
 jobs:
@@ -24,11 +26,12 @@ jobs:
       - name: Run Tests
         run: npm test
 
-      - name: Add Changes
-        if: ${{ success() }}
+      - name: Commit and Push Changes
         run: |
-          git config --global user.email "hopeigbinosa063@gmail.com"
-          git config --global user.name "hopeigbinosa123"
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git add .
           git commit -m "Automated commit"
           git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
